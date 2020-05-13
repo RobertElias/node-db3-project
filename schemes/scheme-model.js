@@ -16,3 +16,6 @@ function findById(id) {
         .where({ id })
         .first();
 }
+function findSteps(scheme_id) {
+    return db('steps').where({ scheme_Id: scheme_id });
+}
