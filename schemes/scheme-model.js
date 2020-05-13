@@ -7,3 +7,6 @@ module.exports = {
     update,
     remove
 };
+function find() {
+    return db('schemes');
+}
