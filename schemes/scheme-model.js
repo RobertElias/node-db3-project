@@ -24,3 +24,9 @@ function findSteps(scheme_id) {
 function add(scheme) {
     return db('schemes').insert(scheme);
 }
+
+function update(changes, id) {
+    return db('schemes')
+        .where({ id })
+        .update(changes);
+}
