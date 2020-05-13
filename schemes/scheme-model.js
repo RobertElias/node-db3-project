@@ -19,3 +19,8 @@ function findById(id) {
 function findSteps(scheme_id) {
     return db('steps').where({ scheme_Id: scheme_id });
 }
+
+
+function add(scheme) {
+    return db('schemes').insert(scheme);
+}
